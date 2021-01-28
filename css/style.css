@@ -1,0 +1,63 @@
+/* --- Generic Styles --- */
+
+@font-face {
+    font-family: "GoodKitty W05 Regular";
+    src: url("../Fonts/5173606/8f6ea367-d065-4ee3-b7d1-c447a8872093.woff2") format("woff2"),
+    url("../Fonts/5173606/a00307ce-5940-42ff-9bc4-4517c2bd1362.woff") format("woff");
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Abel', sans-serif;
+}
+
+header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/parc_monceau_jardin_paris_naumachie_6959.jpeg");
+}
+
+footer {
+    flex: 0 0 4em;
+    background: #000;
+    height: 5em;
+}
+
+h1 {
+    color: #fff;
+    margin: 5px;
+    padding: 0px;
+}
+
+.header {
+    width: 100%;
+    background-color: #313131;
+}
+
+.container {
+    margin: 10px auto;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+/*///////////////////// MEDIA QUERIS //////////////////*/
+
+@media (min-width: 768px) {
+    .reseau {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 20.176%; 
+    }
+}
