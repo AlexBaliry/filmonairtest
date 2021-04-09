@@ -1,64 +1,475 @@
 /* --- Generic Styles --- */
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    
+}
+
 @font-face {
-    font-family: "GoodKitty W05 Regular";
-    src: url("../Fonts/5173606/8f6ea367-d065-4ee3-b7d1-c447a8872093.woff2") format("woff2"),
-    url("../Fonts/5173606/a00307ce-5940-42ff-9bc4-4517c2bd1362.woff") format("woff");
+    font-family: 'Arbutus Slab', sans-serif;
 }
 
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Abel', sans-serif;
-  /**/
-}
 
 header {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    height: 100%;
+    height: 42.125rem;
     background-color: blue;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("img/parc_monceau_jardin_paris_naumachie_6959.jpeg");
+}
+
+nav {
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Arbutus Slab', serif;
+}
+
+nav ul{
+    display: flex;
+}
+
+li{
+    margin: %;
+}
+
+
+.logo{
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 footer {
+    display: flex;
     flex: 0 0 4em;
     background: #000;
-    height: 5em;
+    margin: 0 auto;
+    height: 6em;
+    max-width: 100%;
 }
+
+
 
 h1 {
     color: #fff;
-    margin: 5px;
-    padding: 0px;
+    margin: 0.31rem;
+    padding: 0;
 }
 
-.header {
+h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 3px solid rgba(0, 0, 0, 0.13);
+}
+
+.bckg-img{
+    background-image: url("img/parc_monceau_jardin_paris_naumachie_6959.jpg"); /* The image used */
+    height: 100%; /* Full height */
+    background-position: center; /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(0.5rem); /* Add the blur effect 8px */
+    -webkit-filter: blur(0.5rem);
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div {
+    width: 1.5625rem;
+    height: 0.1875rem;
+    background-color: #fff;
+    margin: 0.3125rem;
+}
+
+/* Rectangle 2 */
+#img-article{
+    background: url('../images/parc-1.jpg'),rgba(255, 255, 255, 0.5);;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 70% 20%;
+}
+
+.superposition{
+    display: flex;
+}
+
+/* Vertical Line  */
+
+#ornement_title_top{
+    width: 4.375rem;
+    height: 0px;
+    margin : 4rem 0 2rem 0;
+    border: 2px solid #000000;
+    transform: rotate(90deg);
+}
+
+#ornement_title_bottom{
+    width: 4.375rem;
+    height: 0px;
+    margin : 3rem 0 5rem 0;
+    border: 2px solid #000000;
+    transform: rotate(90deg);
+}
+
+
+.titre_section1{
+    font-family: 'Monoton', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9rem; /* 144px */
+    line-height: 14rem;
+    color: #FF8500;
+    text-align: center;
+}
+
+.titre_section2{
+    font-family: 'Monoton', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6rem; /* 96px */
+    line-height: 9.34rem;
+    color: #FF8500;
+    text-align: center;
+}
+
+/* TV */
+
+#titre_section2{
+    font-family: Mogra;
+    font-style: normal;
+    font-weight: normal;
+    margin: -2rem 0 3rem 0 ;
+    font-size: 6rem; /* 96px */
+    line-height: 7.1875rem;
+    color: #000AFF; /* Blue */
+    transform: rotate(-9.4deg);
+}
+
+.annonce{
+    font-family: Arbutus Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    text-align: center;
+    color: #000;
+}
+
+#annonce{
+    font-family: Arbutus Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    text-align: center;
+}
+
+
+/*-----------------  PAGE RESERVATION  ----------------*/
+.subtitle{
+    text-align: center;
+}
+
+
+.date_bcg{
+    height: 52px;
+    width: 20.625rem;
+    background: #FF8500;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.date{
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arbutus Slab;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.14em;
+    font-size: 1.5rem;
+    margin: auto; 
+    padding: auto;
+}
+
+.date-subtitle{
+    font-family: Arbutus Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.14em;
+    color: #FFFFFF;
+}
+
+.seance{
+    font-family: Arbutus Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.form-control{
+    width: 30%;
+}
+
+/*----------------- PAGE PROGRAMME ----------------*/
+
+.bandeau_date{
+    height: 100%;
+    width: auto;
+    background-color: black;
+}
+
+.bandeau_date2{
+    height: 100%;
+    width: auto;
+    background-color: #4453DE;
+}
+
+.bandeau_date1{
+    height: 100%;
+    width: auto;
+    background-color: black;
+}
+
+.bandeau_date2{
+    height: 100%;
+    width: auto;
+    background-color: #4453DE;
+}
+
+.horaire_film{
+    text-align: center;
+}
+
+.affiche_film{
+    width: 12.5rem;
+    display: block;
+}
+
+.titre_section3{
+    font-family: 'Monoton', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem; /* 3rem */
+    line-height: 9.34rem;
+    color: #FF8500;
+    text-align: center;
+}
+
+/* ---------------- TV -------------------*/
+
+#titre_section3{
+    font-family: Mogra;
+    font-style: normal;
+    font-weight: normal;
+    margin: -3.5rem 0 3rem 0 ;
+    font-size: 3rem; /* 3rem */
+    line-height: 7.1875rem;
+    color: #000AFF; /* Blue */
+    transform: rotate(-9.4deg);
+}
+
+/* TV Rectangle 6 */
+.onairtv_button{
+    display: flex;
+    width: 19.625rem;
+    height: 2rem;
+    left: 19.25rem;
+    background-color: #FF8500;
+}
+
+/* Arrow */
+.onairtv_arrow{
+    margin-left: 11rem;
+}
+
+/* Rectangle 5 */
+
+/*----------------- PAGE PARTENARIAT
+ ----------------*/
+
+/* carrée orange */
+.square {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #FF8500;
+}
+
+.logo_partenaire{
+    margin: auto;
     width: 100%;
-    background-color: #313131;
+    height: auto;
+    background-color: transparent;
 }
 
-.container {
-    margin: 10px auto;
-    max-width: 1200px;
-    padding: 10px;
+/* Bouton Contact */
+
+.contact_button{
+    width: 334px;
+    height: 44px;
+    left: 234px;
+    top: 4731px;
+}
+
+
+/*----------------- FOOTER
+ ----------------*/
+/*#nav2{
+    background-color: transparent;
+    width: 100%;
+}
+
+footer p{
+    color: white;
+    margin-top: 0.48rem;
+}*/
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 300px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
 }
 
 /*///////////////////// MEDIA QUERIS //////////////////*/
 
-@media (min-width: 768px) {
-    .reseau {
-        -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-        max-width: 20.176%; 
+@media screen and (max-width: 101.5rem){
+    .nav-links{
+    width: 60%;
     }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5 ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+/* ----------  Taller footer (plus grand footer) on small screens ----------*/
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 700px;
+    }
+    .footer {
+      height: 700px;
+    }
+}
+
+
+/*----------------- PAGE PARTENARIAT
+ ----------------*/
+
 }
